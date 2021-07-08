@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: #1d2126;
+}
+
+.col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    background: #1d2126;
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #1d2126;
+    height: 80px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.srch {
+    display: none;
+}
+
+.srch input[type=search] {
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+    height: 25px;
+    width: 195px;
+    background: none;
+
+
+}
+
+.srch input[type=search]::placeholder {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.srch input:focus {
+    outline: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.btn-srch {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-image: url(images/srch.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 2px;
+    margin-left: -30px;
+}
+
+
+.logo {
+    flex: 0 0 100%;
+    display: block;
+    padding: 13px 24px 12px;
+}
+
+.nav-item {
+    flex: 0 0 auto;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-item:hover {
+    border-radius: 5px;
+    border: solid rgba(255, 255, 255, 0.75) 1px;
+}
+
+.nav-item:active {
+    border-radius: 5px;
+    border: solid rgba(57, 164, 146) 1px;
+}
+
+.slider {
+    height: 650px;
+    width: 100%;
+    background-image: url(images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+}
+
+
+
+
+@media(min-width:768px) {
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-sm-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    .srch {
+        display: block;
+    }
+
+}
