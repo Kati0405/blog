@@ -2,6 +2,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    background-color: #1d2126;
 }
 .row-header {
     height: 80px;
@@ -77,12 +78,16 @@ header {
     margin-left: -30px;
 }
 
-.row-slider {
-    height: 650px;
-    align-items: center;
+.slider-section {
     background-image: url(images/bg.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #1d2126;
+}
+.row-slider {
+    height: 650px;
+    align-items: center;
+
 }
 
 .slider-text p, .about-text p {
