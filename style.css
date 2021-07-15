@@ -91,13 +91,9 @@ header {
 }
 
 .slider-text p, .about-text p {
-    margin-top: 35px;
     margin-bottom: 35px;
 }
 
-.about-header h1 {
-    margin-top: 86px;
-}
 
 h1 {
     font-family: 'Quattrocento Sans', sans-serif;
@@ -109,6 +105,7 @@ h1 {
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .white-text p {
@@ -149,7 +146,7 @@ p {
     background-color: rgba(57, 164, 146);
     border: 1px solid rgba(57, 164, 146);
 }
-.row-about {
+.row-white {
     background-color: white;
 }
 .social-media {
@@ -164,6 +161,10 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.social-media-item:hover {
+    background-color: #8d9194; 
 }
 
 h2 {
@@ -196,7 +197,7 @@ h2 {
 .about-goals .row {
     margin-bottom: 20px;
 }
-.team-header h1 {
+h1 {
     margin-top: 86px;
     margin-bottom: 60px;
 }
@@ -242,6 +243,10 @@ h3 {
     display: none;
 }
 
+.social-media-hover-item:hover {
+    background-color: #87888a;
+}
+
 .team-member:hover .social-media-hover {
     display: flex;
 }
@@ -270,12 +275,81 @@ h3 {
     margin-bottom: -3px;
 }
 .team-member {
-    margin-bottom: 15px;
+    margin-bottom: 100px;
 }
 
 .team-section {
     border-top: 1px solid rgba(221, 221, 221)
 }
+
+.work {
+    background-color: #1d2126;
+}
+
+.work-item {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.work-about {
+    background-color: #3a454d;
+    height: 62px;
+    width: 100%;
+    padding-left: 20px;
+    display: none;
+    line-height: 62px;
+}
+
+.work-about h3{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.work-pic img {
+    width: 100%;
+}
+
+.work-item:hover .work-about {
+    display: block;
+    z-index: 10;
+    bottom: 0px;
+    position: absolute;
+
+}
+
+.work-item:hover .work-pic img {
+    opacity: 0.5;
+}
+
+.services-item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 215px;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.services-item-icon {
+    height: 60px;
+    width: 60px;
+}
+
+.services-item p {
+    line-height: 25px;
+    text-align: center;
+}
+
+.services {
+    background-color: #fff;
+}
+
+.btn-show-me-more {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+
 
 
 @media(max-width:1023px) {
@@ -289,4 +363,5 @@ h3 {
     .col-xs-hidden {
         display: none;
     }
+
 }
