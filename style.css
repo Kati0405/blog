@@ -82,7 +82,7 @@ header {
     background-image: url(images/bg.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #1d2126;
+    background-color: #3a454d;
 }
 .row-slider {
     height: 650px;
@@ -141,6 +141,7 @@ p {
     margin-right: 13px;
 }
 
+
 .btn input[type=button]:hover {
     cursor: pointer;
     background-color: rgba(57, 164, 146);
@@ -190,7 +191,6 @@ h2 {
 }
 
 .about-goals {
-    margin-top: 35px;
     margin-bottom: 100px;
 }
 
@@ -282,8 +282,8 @@ h3 {
     border-top: 1px solid rgba(221, 221, 221)
 }
 
-.work {
-    background-color: #1d2126;
+.work, .features {
+    background-color: #3a454d;
 }
 
 .work-item {
@@ -300,11 +300,11 @@ h3 {
     line-height: 62px;
 }
 
-.work-about h3{
+.work-about h3, .features-about h3 {
     color: rgba(255, 255, 255, 0.75);
 }
 
-.work-pic img {
+.work-pic img, .features-pic img {
     width: 100%;
 }
 
@@ -348,6 +348,142 @@ h3 {
     margin-bottom: 60px;
     text-align: center;
 }
+
+.features-about p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.features-about h3 {
+    margin-top: 50px;
+}
+
+.features-item {
+    margin-bottom: 80px;
+}
+
+.contact-info h2 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.75);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contacts-map {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.contacts-info p{
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.contacts-info {
+    margin-bottom: 86px;
+}
+
+footer {
+    background-color: #3a454d;
+
+}
+.footer-copyright {
+    height: 94px;
+    display: flex;
+    align-items: center;
+}
+.footer p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-social-media-item {
+    height: 48px;
+    width: 48px;
+}
+
+.footer-social-media-item:hover {
+    background-color: #87888a;
+}
+
+.footer-social-media {
+    display: flex;
+    align-items: center;
+    height: 94px;
+    justify-content: flex-end;
+}
+
+h4 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 25px;
+}
+
+.form-field input, .form-field textarea {
+    border: 1px solid #eaeef1;
+    border-radius: 10px;
+    background-color: #eaeef1;
+}
+
+.form-field [type=textarea] {
+    width: 100%;
+    height: 150px;
+}
+
+.form-field input {
+    width: 100%;
+    height: 40px;
+}
+
+
+.btn-send-message input[type=button] {
+    height: 45px;
+    width: 125px;
+    color: white;
+    background-color: #3a454d;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Quattrocento Sans', sans-serif;
+    border-radius: 5px;
+    border: 1px solid #3a454d;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+
+.btn-send-message input[type=button]:hover {
+    cursor: pointer;
+    background-color: rgba(57, 164, 146);
+    border: 1px solid rgba(57, 164, 146);
+}
+
+.send-message-form {
+    height: 350px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.form-field:last-child {
+    margin-top: 30px;
+}
+
+
 
 
 
