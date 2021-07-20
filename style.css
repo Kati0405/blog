@@ -389,7 +389,7 @@ h3 {
 }
 
 .contacts-info {
-    margin-bottom: 86px;
+    margin-bottom: 70px;
 }
 
 footer {
@@ -440,7 +440,7 @@ h4 {
 
 .form-field [type=textarea] {
     width: 100%;
-    height: 150px;
+    height: 120px;
 }
 
 .form-field input {
@@ -461,7 +461,6 @@ h4 {
     border: 1px solid #3a454d;
     margin-left: 15px;
     margin-top: 30px;
-    margin-bottom: 100px;
 }
 
 
@@ -472,11 +471,11 @@ h4 {
 }
 
 .send-message-form {
-    height: 350px;
+    height: 450px;
     padding-left: 15px;
     padding-right: 15px;
-    border: 1px solid black;
     background-color: white;
+    margin-top: -30px;
 }
 
 .form-field:last-child {
@@ -498,6 +497,14 @@ h4 {
 @media(max-width:767px) {
     .col-xs-hidden {
         display: none;
+    }
+
+    .footer-copyright {
+        height: 50px;
+    }
+
+    .footer-social-media {
+        height: 50px;
     }
 
 }
